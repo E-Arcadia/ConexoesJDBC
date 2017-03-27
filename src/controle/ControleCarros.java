@@ -29,7 +29,6 @@ public class ControleCarros {
 		while ((conexaoInfo = menuConexoes.runMenu()) != null) {
 			new AutomovelView(new AutomovelDAO().listar(conexaoInfo), conexaoInfo.getDESCRICAO());
 		}		
-		System.exit(0);
 	}
 
 

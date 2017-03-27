@@ -24,7 +24,6 @@ public class Conexao {
 			return null;
 		}catch (SQLException e) {
 			System.out.println("SQLException");
-			System.err.println(e);
 			return null;
 		}
 	}
