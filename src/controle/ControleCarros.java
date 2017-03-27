@@ -13,6 +13,8 @@ import view.SelecionaArquivosProperties;
 
 public class ControleCarros {
 
+	private static final String JFrame = null;
+
 	public Map<String, ConexaoInfo> getConfiguracoesConexoes() {
 		List<Path> paths = new SelecionaArquivosProperties().get(System.getProperty("user.dir"));
 		if (paths != null) {
@@ -27,6 +29,8 @@ public class ControleCarros {
 		while ((conexaoInfo = menuConexoes.runMenu()) != null) {
 			new AutomovelView(new AutomovelDAO().listar(conexaoInfo), conexaoInfo.getDESCRICAO());
 		}		
+		System.exit(0);
 	}
+
 
 }
