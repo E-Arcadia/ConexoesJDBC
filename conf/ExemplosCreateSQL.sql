@@ -8,6 +8,10 @@ CREATE TABLE automoveis (
     
     
 <!-- SQL SERVER -->
+<!-- -Djava.library.path="C:\Program Files\Microsoft JDBC Driver 4.0 for SQL Server\sqljdbc_4.0\enu\auth\x64" -->
+<!-- https://msdn.microsoft.com/library/mt484311.aspx -->
+<!-- https://docs.microsoft.com/en-us/sql/connect/jdbc/building-the-connection-url -->
+USE [carros]
 CREATE TABLE [dbo].[automoveis](
 	[id] [int] NOT NULL,
 	[placa] [varchar](40) NULL,

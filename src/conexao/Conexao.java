@@ -23,7 +23,7 @@ public class Conexao {
 			System.out.println("HsqlException");
 			return null;
 		}catch (SQLException e) {
-			System.out.println("SQLException");
+			System.out.println("SQLException: Erro de conexão: Class Conexao.java."+ e.toString());
 			return null;
 		}
 	}

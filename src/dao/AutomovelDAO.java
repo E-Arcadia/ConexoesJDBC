@@ -43,10 +43,10 @@ public class AutomovelDAO {
 				lista.add(automovel);
 			}
 		} catch (SQLException e) {
-			System.err.println("SQLException\n\n");
+			System.err.println("SQLException: Erro sem conexão: Class AutomovelDAO.java.\n\n");
 			return null;
 		} catch (NullPointerException e) {
-			System.err.println("SQLException\n\n");
+			System.err.println("SQLException: NullPointerException: Class AutomovelDAO.java.\n\n");
 			return null;
 		}
 		return lista;

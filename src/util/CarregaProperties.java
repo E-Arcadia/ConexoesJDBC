@@ -67,8 +67,7 @@ public class CarregaProperties {
 	private Properties getProperties(Path path) {
 		Properties properties = new Properties();
 
-		try (BufferedReader bufferedReader = Files.newBufferedReader(path,
-				StandardCharsets.ISO_8859_1)) {
+		try (BufferedReader bufferedReader = Files.newBufferedReader(path,StandardCharsets.ISO_8859_1)) {
 			properties.load(bufferedReader);
 		} catch (IOException e) {
 			System.err.println("Arquivo conf.properties não encontrado");
